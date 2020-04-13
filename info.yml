@@ -1,7 +1,7 @@
 ---
 - hosts: servers
-  remote_user: root
-# become: yes
+  remote_user: steve
+  become: yes
 
   tasks:
     - name: get uptime
@@ -19,6 +19,18 @@
     - name: get linux info
       raw: uname -a
 
+      register: info
+
+    - debug: var=info.stdout_lines
+ 
+    - name: Interface info
+      raw: ifconfig
+      register: info
+
+    - debug: var=info.stdout_lines
+
+    - name: UFW status
+      raw: ufw status
       register: info
 
     - debug: var=info.stdout_lines
