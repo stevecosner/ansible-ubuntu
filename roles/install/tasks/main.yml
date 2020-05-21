@@ -2,6 +2,6 @@
 
   apt:
 
-    name: curl
+    name: apache2
 
     state: present
