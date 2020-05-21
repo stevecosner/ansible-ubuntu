@@ -11,6 +11,17 @@
 
 [servers]
 
-ubuntu1 ansible_host=10.0.3.70 ansible_ssh_private_key_file=~/.ssh/id_rsa_msa
-#docker1 ansible_host=172.17.0.2 ansible_ssh_private_key_file=~/.ssh/idrsa
-#ubuntu2 ansible_host=192.168.91.234 ansible_ssh_private_key_file=~/.ssh/idrsa
+ubuntu1 ansible_host=10.1.1.53 ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+
+
+
+
+
+
+
+
+
+
+
+

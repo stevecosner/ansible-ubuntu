@@ -3,9 +3,10 @@
 - name: update ubuntu servers
 
   hosts: servers
-  # become: yes
-  remote_user: root
+  become: yes
+  remote_user: steve
   
   roles:
-    - common
+    - update
+    - install
 
