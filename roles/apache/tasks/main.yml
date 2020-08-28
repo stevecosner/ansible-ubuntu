@@ -5,3 +5,12 @@
     name: apache2
 
     state: present
+
+
+- name: Start apache2
+
+  service:
+
+    name: apache2
+
+
