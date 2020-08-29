@@ -1,0 +1,29 @@
+- name: Install apache2
+
+  apt:
+
+    name: apache2
+
+    state: present
+
+
+- name: Start apache2
+
+  service:
+
+    name: apache2
+
+
+- name: clone git bootstrap landing page repo
+ 
+  raw: git clone https://github.com/StartBootstrap/startbootstrap-landing-page.git
+
+
+
+- name: move web files
+ 
+  raw: cp -r startbootstrap-landing-page/. /var/www/html
+
+
+
+
